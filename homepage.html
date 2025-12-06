@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('images/new1.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-color: #f0f0f0;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        
+        .top-bar {
+            background: linear-gradient(135deg, white, #4caf50, #2196f3 ,white);
+            color: #00008B;
+            padding: 10px 20px;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .title {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation li {
+            margin: 0 10px;
+            position: relative; /* Ensure the dropdown is positioned relative to its parent */
+        }
+
+        .navigation li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navigation li a:hover {
+            transform: translateY(-2px); 
+        }
+
+        .logo1 {
+            height: 80px;
+            width: 80px; /* Ensure it's a square to make it a perfect circle */
+            border-radius: 50%;
+            margin-right: 80px;
+        }
+
+        .left-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .left-content h6 {
+            margin: 5px 0;
+        }
+
+        .left-content div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
+            margin-left: -10px;
+        }
+
+        .text-content {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            margin-left: -250px;
+        }
+        
+        .title {
+            margin-left: -130px;
+        }
+
+        .dropdown {
+            display: none; /* Hide dropdowns by default */
+            position: absolute;
+            background-color: grey;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 150px; /* Ensure dropdown has a minimum width */
+            left: 0; /* Align dropdown to the left of the parent */
+        }
+
+        .dropdown a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .navigation li:hover .dropdown {
+            display: block; /* Show dropdown when hovering over parent */
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="top-bar">
+        <div class="content">
+            <div class="left-content">
+                <div>
+                    <h6>BMS EDUCATIONAL TRUST</h6>
+                    <img class="logo1" src="images/logo.jpeg" alt="image 1">
+                    <h6>COLLEGE OF COMMERCE AND MANAGEMENT</h6>
+                </div>
+                <div class="text-content">
+                    <h1 class="title"><b>BMS</b></h1>
+                </div>
+            </div>
+            <ul class="navigation">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li>
+                    <a>PEOPLE</a>
+                    <div class="dropdown">
+                        <a href="founder.html">FOUNDERS</a>
+                        <a href="principal.html">PRINCIPAL</a>
+                        <a href="faculty.html">FACULTY</a>
+                    </div>
+                </li>
+                <li>
+                    <a>COURSES OFFERED</a>
+                    <div class="dropdown">
+                        <a>B.Com</a>
+                        <a>BBA</a>
+                        <a href="course.html">BCA</a>
+                    </div>
+                </li>
+                <li><a href="curriculum.html">CURRICULUM</a></li>
+                <li>
+                    <a>HAPPENNINGS</a>
+                    <div class="dropdown">
+                        <a href="samskruthi.html">SAMSKRUTHI</a>
+                        <a href="flair.html">FLAIR</a>
+                        <a href="industrial.html">INDUSTRIAL VISIT</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div><marquee><a href="admission.html">UG admissions open for ay 2024-2025!</a></marquee></div>
+    </section>
+</body>
+</html>

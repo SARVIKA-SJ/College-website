@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDUSTRIAL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      perspective: 1000px; /* Added perspective */
+    }
+
+    header {
+      background: linear-gradient(135deg, #4caf50, #2196f3);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 30px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-top: 30px;
+      color: rgb(76, 25, 50);
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      text-align: center; /* Center align */
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin-top: 20px;
+      color: #333;
+      
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #555;
+      background: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transform: rotateX(5deg); /* Added 3D effect */
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    p:hover {
+       transform: translateY(-5px); 
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .department-info {
+      background: linear-gradient(135deg, #ffffff, #e0e0e0);
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .department-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .mission-vision {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .mission-vision > div {
+      flex-basis: 48%;
+    }
+
+    .abtdiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo1,
+    .logo2 {
+      max-width: 100px;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+
+    .heading {
+      margin: 0;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .samskruthi-image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .samskruthi-image {
+      border-radius: 20px;
+      max-width: 80%;
+      width: 80%; /* Adjust the width as needed */
+      height: auto;
+    }
+
+    .sams-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .sams-image {
+      border-radius: 20px;
+      width: calc(50% - 10px); /* Adjust width for two images per row with gap */
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .mission-vision {
+        flex-direction: column;
+      }
+
+      .mission-vision > div {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+
+      .sams-image {
+        width: 100%; /* Full width for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="abtdiv">
+      <img class="logo1" src="images/logo.jpeg" alt="image 1">
+      <h1 class="heading">INDUSTRIAL VISIT</h1>
+    </div>
+  </header>
+  <div class="container">
+    <h2>BMS COLLEGE OF COMMERCE AND MANAGEMENT</h2>
+    <div class="samskruthi-image-container">
+      <img src="images/isac.jpg" class="samskruthi-image" alt="samskruthi Image">
+    </div>
+   
+   <h2>INDUSTRIAL VISIT</h2> 
+<p>Industrial visit has its own importance in a career of a student who is pursuing a degree. It is considered as a part of college curriculum and objectives of industrial visit is to provide students an insight regarding internal working of companies.</p>
+
+<p>The Students at BMSCCM visited varied organisations to see how they function & understand the practical aspect of corporate life. The students enjoy the trip as they visit & interact with different companies and organisations.The industries students visited by students are MYRA School of Business.</p>
+    
+    <div class="sams-images">
+      
+      <img src="images/iv1.jpeg" class="sams-image" alt="sams Image">
+      <img src="images/iv.jpeg" class="sams-image" alt="sams Image">
+      
+    </div>
+  </div>
+</body>
+</html>
